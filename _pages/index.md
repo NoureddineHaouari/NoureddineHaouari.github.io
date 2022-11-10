@@ -5,22 +5,15 @@ id: home
 permalink: /index
 ---
 
-# Welcome! 🌱
+
+# مرحبا بكم في حديقتي الرقمية 🌱
+
+> [!note] حديقتي الرقمية* 
+>أنا [[نورالدين هواري]] وفي هذه [[الحديقة الرقمية]] سأشاركم ما أتعلمه. 
+>
+
+# Welcome! To My Digital Garden 🌱
 
 <p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
   Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
 </p>
-<p style="padding: 3em 1em; background: #fffb3e2b; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Guide]]</span> setup your digital garden with Obsidian.
-</p>
-
-
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
-
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
-
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
