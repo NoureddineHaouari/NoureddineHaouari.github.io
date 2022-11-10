@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/Hypothesis.md",
+                "file": "_notes/المقالة 01 ; كيف لا أنسى المعارف التي أتعلمها.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb230d81df793153",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/المقالة 04; كيف تسطر قوقل أهدافها؟.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "40d545bdf419da54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/المقالة 01 ; كيف لا أنسى المعارف التي أتعلمها.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_pages/Hypothesis.md",
+                "file": "_notes/المقالة 01 ; كيف لا أنسى المعارف التي أتعلمها.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_pages/Hypothesis.md",
+                "file": "_notes/المقالة 01 ; كيف لا أنسى المعارف التي أتعلمها.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_pages/Hypothesis.md"
+                "file": "_notes/المقالة 01 ; كيف لا أنسى المعارف التي أتعلمها.md"
               }
             }
           }
@@ -139,15 +163,15 @@
   },
   "active": "05149327e8cd226c",
   "lastOpenFiles": [
-    "_notes/الحديقة الرقمية.md",
-    "_pages/index.md",
-    "_notes/نورالدين هواري.md",
-    "_notes/guide.md",
-    "_notes/Configure a new vault.md",
-    "_notes/consistency.md",
     "_notes/Obsidian.md",
-    "_notes/Git Plugin Tutorial.md",
-    "_pages/tags.md",
-    "_notes/your-first-note.md"
+    "_pages/Hypothesis.md",
+    "_notes/المقالة 01 ; كيف لا أنسى المعارف التي أتعلمها.md",
+    "_notes/Roam Research.md",
+    "_notes/Logseq.md",
+    "_notes/Notion.md",
+    "_notes/Zettlekasten.md",
+    "_notes/تحدي ship 30 for 30🔥.md",
+    "_notes/المقالة 05; ثلاث طرق تخفى على الكثير لإجياد منح في البحث العلمي.md",
+    "_notes/المقالة 02; أنا أفكر جديا في الإستثمار في حديقة رقمية عامة.md"
   ]
 }

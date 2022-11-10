@@ -8,6 +8,6 @@ layout: note
 > Content not yet available.
 > 
 
- >[!warning] رسالة*
+ > [!warning] رسالة*
 > محتوى غير موجود بعد.
 > 
