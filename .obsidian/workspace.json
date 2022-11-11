@@ -4,65 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7e399ae231ef037e",
+        "id": "85cf06a3cc57be06",
         "type": "tabs",
         "children": [
           {
-            "id": "05149327e8cd226c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/نورالدين هواري.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca9aaab8eaf0b1cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/ادراة المعرفة الشخصية.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f8ed6e9bc4947440",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
-        "id": "23bad44d918ef490",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ae85634f114d4b7b",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "assets/images/nouree.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "41af8cbafa08d465",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7317fcc90cf3eae4",
+            "id": "d1ff3d4c6865fb65",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -135,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/نورالدين هواري.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/نورالدين هواري.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_notes/نورالدين هواري.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -185,17 +127,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "05149327e8cd226c",
+  "active": "d1ff3d4c6865fb65",
   "lastOpenFiles": [
-    "assets/images/nouree.md",
+    "_notes/ادراة المعرفة الشخصية.md",
+    "assets/images/Drawing 2022-11-11 22.30.23.excalidraw.md",
     "_notes/نورالدين هواري.md",
+    "assets/images/nouree.md",
     "_notes/تحدي ship 30 for 30.md",
     "_notes/Generative AI.md",
     "_notes/الشركات الناشئة.md",
     "_notes/الذكاء الإصطناعي.md",
     "_notes/البرمجة.md",
-    "_notes/ادراة المعرفة الشخصية.md",
-    "assets/images/test.md",
-    "_notes/المقالة 05; ثلاث طرق تخفى على الكثير لإجياد منح في البحث العلمي.md"
+    "assets/images/test.md"
   ]
 }
