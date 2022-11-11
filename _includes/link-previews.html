@@ -68,14 +68,12 @@
   }
 
   function showTooltip(event) {
-    console.log(event)
     var elem = event.target;
     var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
     var top = window.pageYOffset || document.documentElement.scrollTop
-
-    if (true) {
+    if (event.target.getAttribute("href").indexOf("http")===-1 || event.target.getAttribute("href").indexOf(window.location.host)!==-1) {
       if (!linkHistories[event.target.getAttribute("href")]) {
-        iframe.src = event.target.getAttribute("href")
+       iframe.src = event.target.getAttribute("href")
         iframe.onload = function() {
           tooltipContentHtml = ''
           tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
@@ -110,7 +108,26 @@
       } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
           tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
       }
-    }
+    } 
+  }
+  function loadSVG(){
+    document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
+    document.querySelectorAll("img[src*=svg]").forEach(obj=>{
+        fetch(obj.src)
+        .then(e=>e.text())
+        .then(text=>
+          {
+           
+            obj.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
+            console.log({match,offset,str})
+            return `href="${offset.replaceAll(" ","-")}"`;
+            
+          });
+          document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners)
+          }
+        )
+        }
+      )
   }
 
   function setupListeners(linkElement) {
@@ -145,6 +162,8 @@
   }
   console.log( document.querySelectorAll('{{ include.wrapperQuerySelector }}'))
 
-  d3.select(window).on("load", ()=>document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners));
+  d3.select(window).on("load", ()=>{
+    loadSVG();
+});
   
 </script>

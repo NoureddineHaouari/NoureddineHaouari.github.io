@@ -13,7 +13,7 @@ layout: ar
 | 04    |                  [[المقالة 04; كيف تسطر قوقل أهدافها؟]]         |
 | 05    |                                        [[المقالة 05; ثلاث طرق تخفى على الكثير لإجياد منح في البحث العلمي]]      |
 | 06    | [[المقالة 06 ]]                                                               |
- 
+
 
 # مراجع 
 * [How to Build a Writing Habit with Ship 30 for 30](https://mattragland.com/ship30for30-review)
