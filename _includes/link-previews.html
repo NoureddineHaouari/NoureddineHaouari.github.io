@@ -15,11 +15,13 @@
     overflow: hidden;
     position: absolute;
     width: 400px;
-    height: 500px;
+    height: auto;
+    max-height: 300px;
     font-size: 0.8em;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     opacity: 0;
     transition: opacity 100ms;
+    unicode-bidi: plaintext;
     overflow-y: scroll;
   }
 
@@ -30,8 +32,8 @@
 		bottom: 0;
 		left: 0;
 		pointer-events: none;
-		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
 		width: 100%;
+    unicode-bidi: plaintext;
 		height: 75px;
   }
 </style>
@@ -76,7 +78,7 @@
         iframe.src = event.target.getAttribute("href")
         iframe.onload = function() {
           tooltipContentHtml = ''
-          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
           tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
 
           tooltipContent.innerHTML = tooltipContentHtml
@@ -135,6 +137,7 @@
       showTooltip(event);
     });
 
+    
     tooltipWrapper.addEventListener('mouseenter', function(event) {
       clearTimeout(opacityTimeout);
       clearTimeout(contentTimeout);

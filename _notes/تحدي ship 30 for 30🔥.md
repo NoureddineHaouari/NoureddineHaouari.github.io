@@ -4,6 +4,7 @@ tags:
 layout: ar 
 ---
 
+
 | الرقم | المقالة                                                         |
 | ----- | --------------------------------------------------------------- |
 | 01    | [[المقالة 01 ; كيف لا أنسى المعارف التي أتعلمها]]               |
@@ -14,3 +15,6 @@ layout: ar
 | 06    | [[المقالة 06 ]]                                                               |
  
 
+# مراجع 
+* [How to Build a Writing Habit with Ship 30 for 30](https://mattragland.com/ship30for30-review)
+* [https://www.ship30for30.com/](https://www.ship30for30.com/)
