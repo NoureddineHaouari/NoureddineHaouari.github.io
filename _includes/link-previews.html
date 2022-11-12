@@ -130,8 +130,34 @@
       )
   }
 
+  //https://stackoverflow.com/a/67977146
+  function onLongPress(element, callback) {
+    var timeoutId;
+
+    element.addEventListener('touchstart', function(e) {
+        timeoutId = setTimeout(function() {
+            timeoutId = null;
+            e.stopPropagation();
+            callback(e);
+        }, 500);
+    });
+
+    element.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    element.addEventListener('touchend', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+
+    element.addEventListener('touchmove', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+}
+
+
   function setupListeners(linkElement) {
-    console.log(linkElement)
+
     linkElement.addEventListener('mouseleave', function(_event) {
       hideTooltip();
     });
@@ -140,9 +166,12 @@
       hideTooltip();
     });
 
-    linkElement.addEventListener('touchend', function(_event) {
-      hideTooltip();
-    });
+    onLongPress(linkElement,(event)=>{
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    })
+
 
     tooltipWrapper.addEventListener('touchend', function(_event) {
       hideTooltip();
