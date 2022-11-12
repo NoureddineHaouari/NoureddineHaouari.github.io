@@ -14,7 +14,8 @@
     border-radius: 4px;
     overflow: hidden;
     position: absolute;
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     height: auto;
     max-height: 300px;
     font-size: 0.8em;
@@ -112,22 +113,30 @@
   }
   function loadSVG(){
     document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
-    document.querySelectorAll("img[src*=svg]").forEach(obj=>{
-        fetch(obj.src)
+    const svgImgs = document.querySelectorAll("img[src*=svg]");
+    if(svgImgs.length>0) {
+      svgImgs.forEach(img=>{
+        fetch(img.src)
         .then(e=>e.text())
         .then(text=>
           {
-           
-            obj.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
+            img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
             console.log({match,offset,str})
             return `href="${offset.replaceAll(" ","-")}"`;
-            
           });
-          document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners)
+        
           }
         )
-        }
-      )
+        .error((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners);
+        });
+        })
+    } else {
+      document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners);
+    }
   }
 
   //https://stackoverflow.com/a/67977146
@@ -150,9 +159,10 @@
         if (timeoutId) clearTimeout(timeoutId);
     });
 
-    element.addEventListener('touchmove', function () {
+    /*element.addEventListener('touchmove', function () {
         if (timeoutId) clearTimeout(timeoutId);
     });
+    */
 }
 
 
