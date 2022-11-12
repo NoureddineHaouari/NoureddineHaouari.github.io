@@ -155,15 +155,16 @@
         e.preventDefault();
     });
 
-    element.addEventListener('touchend', function () {
+    /*element.addEventListener('touchend', function () {
         if (timeoutId) clearTimeout(timeoutId);
     });
-
+    */
     /*element.addEventListener('touchmove', function () {
         if (timeoutId) clearTimeout(timeoutId);
     });
     */
 }
+
 
 
   function setupListeners(linkElement) {
@@ -181,11 +182,6 @@
       clearTimeout(contentTimeout);
       showTooltip(event);
     })
-
-
-    tooltipWrapper.addEventListener('touchend', function(_event) {
-      hideTooltip();
-    });
 
     linkElement.addEventListener('mouseenter', function(event) {
       clearTimeout(opacityTimeout);
